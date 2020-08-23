@@ -43,7 +43,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * ```git clone``` ```https://github.com/Owiti-Charles/Quotes-app.git```
 
-* cd Quotes-app
+* ```cd Quote-app```
 
 * ```code .``` or atom . based on the text editor you have.
 
