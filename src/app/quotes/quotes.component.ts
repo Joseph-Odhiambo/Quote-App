@@ -16,17 +16,20 @@ export class QuotesComponent implements OnInit {
     new Quote (5,'Annalitta ','Beauty Quotes','Think of all the beauty still left around you and be happy.','Anne Frank',new Date(2019,7,17),0,0),
     new Quote (6,'Joe ','Tech and life','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn',new Date(2019,7,15),0,0)
   ];
-  get sortQuotes() {
-    return this.quotes.sort((a, b) => {
-      return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
-    });
-  }  
+  //Quote addition
   addedQuote(quote){
     let arraysize = this.quotes.length;
     quote.id = arraysize+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
+
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
+    });
+  }  
+  //confirm deletion
   quoteDelete(isRead, index){
     if (isRead) {
       let toDelete = confirm(`Are you sure you want to delete this Quote?`)

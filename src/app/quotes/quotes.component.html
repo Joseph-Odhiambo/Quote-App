@@ -12,7 +12,7 @@
                             <h4 class="card-title" appHighlightQoute >{{quote.title}} {{quote.maxlikes}} <br> <button (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button" style="margin-top: 5px;">See More</button></h4>
                             <p class="card-text" id="title-quote">{{quote.quote}}</p>
                             <app-quote-details *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'></app-quote-details>
-                            <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+                            <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
                         
                         </div>
                     </div>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="col-md-6">
-          <app-quotes-form (addQuote)="addedQuote($event)"></app-quotes-form>
+          <app-quotes-form (add)="addedQuote($event)"></app-quotes-form>
         </div>
       </div>
     </div>
