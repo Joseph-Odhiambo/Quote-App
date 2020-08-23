@@ -1,1 +1,46 @@
-<p>quotes-form works!</p>
+<!-- quotes addition form -->
+
+<div class="container">
+    <h2 id="add-quote">Add Quote</h2>
+    <hr>
+    <div class="card">
+        <form (ngSubmit)='addQuote()' style="padding: 10px 20px;" #quoteForm='ngForm'>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name"  name="name" placeholder="Enter your name.." required>
+                <div *ngIf='' class="alert alert-danger" >
+                    <p>Name is required</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Quote Tittle</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter Quote title:eg Tech Quotes.." required>
+                <div  class="alert alert-danger" *ngIf=''>
+                    <p>Quote title is required</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Quote</label>
+                <textarea class="form-control" id="quote" rows="3" required name="quote" placeholder="Write your Quote.."></textarea>
+                <div class="alert alert-danger" *ngIf=''>
+                    <p>Quote is required</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name">Quote Author</label>
+                <input type="text" class="form-control" id="author" name="author" placeholder="Authors' Name.." required>
+                <div class="alert alert-danger" *ngIf=''>
+                    <p>Authors Name is required</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="complete">Completion</label>
+                <input type='date' id="complete" required>
+                <div class="alert alert-danger" *ngIf=''>
+                  <p>Date is required</p>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+        </form>
+    </div>
+</div>
