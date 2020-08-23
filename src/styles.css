@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~font-awesome/css/font-awesome.css';
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Architects+Daughter|Handlee|Indie+Flower|Patrick+Hand|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+body {
+    background-image: url('./assets/card.jpeg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+::-webkit-input-placeholder{
+    font-style: italic;
+    font-size: 14px;
+}
