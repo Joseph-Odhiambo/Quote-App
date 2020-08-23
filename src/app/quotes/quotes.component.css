@@ -24,10 +24,9 @@
 .card {
     width: 24rem; 
     margin: 10px;
+    background-color: rgb(80, 255, 255, 0.6);
 }
-.body {
-    background-image: url('/src/assets/body.jpeg');
-}
+
 #title-quote {
     color: rgb(63, 65, 63);
 }
@@ -43,4 +42,8 @@ footer p {
 footer p a {
     color: white;
     font-style: italic;
+}
+.Quotess {
+    padding-top: 10px;
+    background-color: rgb(1, 1, 255, 0.6);
 }

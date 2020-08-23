@@ -3,8 +3,9 @@
 <div class="container">
     <h2 id="add-quote">Add Quote</h2>
     <hr>
-    <div class="card" style="padding: 30px;">
+    <div class="card" style="padding: 30px; background-color: rgb(80, 255, 255, 0.6);">
         <form (ngSubmit)='addQuote() ;quotesForm.resetForm({})' #quotesForm='ngForm'>
+            <h5 style="scroll-padding-bottom: 15px;">Quote Form</h5>
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" required class="form-control" id="name" [(ngModel)]="quoted.name" name="name" #name='ngModel'>
