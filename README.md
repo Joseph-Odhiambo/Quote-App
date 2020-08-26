@@ -41,7 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Installation / Setup instruction
 * Open Terminal {Ctrl+Alt+T}
 
-* ```git clone``` ```https://github.com/Owiti-Charles/Quotes-app.git```
+* ```git clone``` ```https://github.com/Joseph-Odhiambo/Quotes-app.git```
 
 * ```cd Quote-app```
 
